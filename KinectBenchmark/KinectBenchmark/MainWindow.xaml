@@ -26,6 +26,7 @@
         <local:InfraredImageViewer Grid.Column="5" Grid.Row="0" />
 
         <local:BodyIndexViewer Grid.Column="0" Grid.Row="2" />
+        <local:BodyViewer Grid.Column="2" Grid.Row="2" />
 
     </Grid>
 </Window>

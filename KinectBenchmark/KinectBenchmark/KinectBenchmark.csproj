@@ -63,6 +63,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="BodyViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ColorImageViewer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -85,6 +89,9 @@
     </Compile>
     <Compile Include="BodyIndexViewer.xaml.cs">
       <DependentUpon>BodyIndexViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BodyViewer.xaml.cs">
+      <DependentUpon>BodyViewer.xaml</DependentUpon>
     </Compile>
     <Compile Include="ColorImageViewer.xaml.cs">
       <DependentUpon>ColorImageViewer.xaml</DependentUpon>
