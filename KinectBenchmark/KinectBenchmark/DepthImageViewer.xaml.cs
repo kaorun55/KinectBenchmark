@@ -61,7 +61,10 @@ namespace KinectBenchmark
 
                 // Kinectを開く
                 kinect = KinectSensor.GetDefault();
-                kinect.Open();
+                if (!kinect.IsOpen)
+                {
+                    kinect.Open();
+                }
 
                 // 表示のためのデータを作成
                 depthFrameDesc = kinect.DepthFrameSource.FrameDescription;

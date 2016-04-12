@@ -8,7 +8,7 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid Width="300" Height="300">
         <StackPanel Orientation="Vertical">
-            <TextBlock Text="赤外線画像"/>
+            <TextBlock Text="Infrared"/>
             <Border Height="5"/>
             <CheckBox x:Name="IsProcess" Content="処理する" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"/>
             <Border Height="5"/>

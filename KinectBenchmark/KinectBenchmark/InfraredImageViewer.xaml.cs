@@ -60,7 +60,10 @@ namespace KinectBenchmark
 
                 // Kinectを開く
                 kinect = KinectSensor.GetDefault();
-                kinect.Open();
+                if (!kinect.IsOpen)
+                {
+                    kinect.Open();
+                }
 
                 // 赤外線画像の情報を取得する
                 infraredFrameDesc = kinect.InfraredFrameSource.FrameDescription;
@@ -93,6 +96,7 @@ namespace KinectBenchmark
             // 終了処理
             if (infraredFrameReader != null)
             {
+                infraredFrameReader.FrameArrived -= infraredFrameReader_FrameArrived;
                 infraredFrameReader.Dispose();
                 infraredFrameReader = null;
             }
