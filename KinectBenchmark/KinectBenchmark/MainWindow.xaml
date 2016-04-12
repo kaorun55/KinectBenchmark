@@ -11,10 +11,13 @@
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="10"/>
             <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
 
         <local:ColorImageViewer Grid.Column="0" />
         <local:DepthImageViewer Grid.Column="2" />
+        <local:InfraredImageViewer Grid.Column="5" />
 
     </Grid>
 </Window>

@@ -52,6 +52,7 @@ namespace KinectBenchmark
                 Uninitialize();
             }
         }
+
         void Initialize()
         {
             try
