@@ -5,9 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KinectBenchmark"
         mc:Ignorable="d"
-        Title="Kinect Benchmark" Height="350" Width="525">
-    <Grid>
-        <local:ColorImageViewer />
+        Title="Kinect Benchmark" SizeToContent="WidthAndHeight">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+
+        <local:ColorImageViewer Grid.Column="0" />
+        <local:DepthImageViewer Grid.Column="2" />
 
     </Grid>
 </Window>

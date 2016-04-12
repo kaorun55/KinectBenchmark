@@ -102,13 +102,6 @@ namespace KinectBenchmark
                 colorFrameReader = null;
             }
 
-            if ((kinect != null) && kinect.IsOpen)
-            {
-                kinect.Close();
-                kinect = null;
-            }
-
-
             ImageColor.Source = null;
             TextFps.Text = "0";
         }
